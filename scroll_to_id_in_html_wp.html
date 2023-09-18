@@ -1,0 +1,13 @@
+<a rel="arelm_PageScroll2id" href="#order" aria-current="page" data-ps2id-api="true" >Order Now</a>
+<!--custome js-->
+<script>
+jQuery(function() {
+jQuery('a.page-scroll').bind('click', function(event) {
+var $anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $($anchor.attr('href')).offset().top
+}, 1500, 'easeInOutExpo');
+event.preventDefault();
+});
+});
+</script>
