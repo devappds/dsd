@@ -1,3 +1,6 @@
+ <?php wp_nav_menu( array('menu' => 'mainmenu','container_class' => '','items_wrap' => '<ul class="navigation">%3$s</ul>',));?>
+
+
 /** logo dynamic */
 <?php echo esc_url( home_url( '/' ) ); ?>
 
